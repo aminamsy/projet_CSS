@@ -1,0 +1,45 @@
+.banner {
+	height: 650px;
+	background-image: url("../images/house_1.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	box-shadow: 0 0 2rem #333;
+}
+
+.banner__texts {
+	height: 60%;
+	width: 10%;
+	position: absolute;
+	top: 20%;
+	left: 12.5%;
+	border: solid 5px #c5db21;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+}
+
+.banner__texts > * {
+	margin-left: 25%;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.banner__texts p:nth-child(1),
+.banner__texts p:nth-child(3) {
+	padding: 2rem 0;
+	font-size: 0.9rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.banner__texts p:nth-child(2) {
+	font-size: 2.5rem;
+	font-weight: 700;
+	width: 180%;
+}
+
+.banner__texts p:nth-child(3) {
+	margin-top: 5rem;
+}

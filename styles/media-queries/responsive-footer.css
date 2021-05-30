@@ -1,0 +1,14 @@
+@media screen and (max-width: 1080px) {
+	.footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer > * {
+		margin: 1rem 0;
+	}
+
+	.footer__social {
+		margin-top: 3rem;
+	}
+}

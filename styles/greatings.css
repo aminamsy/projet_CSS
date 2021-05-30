@@ -1,0 +1,200 @@
+.greatings {
+	width: 55%;
+	margin: auto;
+	margin-top: 7rem;
+	padding: 1.5rem;
+	position: relative;
+}
+
+.greatings::after {
+	content: "";
+	display: inline-block;
+	height: 110%;
+	width: 100vw;
+	background-image: url("../images/dots-background.png");
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	left: -40%;
+	z-index: -1;
+}
+
+/* ---------- HEAD ---------- */
+
+.greatings__head {
+	margin-bottom: 2rem;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+.greatings__head__title {
+	font-size: 2rem;
+	font-weight: 800;
+	letter-spacing: -1px;
+}
+
+/* ---------- ARROWS ---------- */
+
+.greatings__head__buttons {
+	user-select: none;
+}
+
+.greatings__head__buttons__leftArrow,
+.greatings__head__buttons__rightArrow {
+	display: inline-block;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
+
+.greatings__head__buttons__leftArrow {
+	margin-right: 1.3rem;
+}
+
+.greatings__head__buttons__leftArrow::before,
+.greatings__head__buttons__rightArrow::before {
+	border-style: solid;
+	border-width: 0.35em 0.35em 0 0;
+	content: "";
+	display: inline-block;
+	height: 0.7em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.7em;
+}
+
+.greatings__head__buttons__leftArrow::before {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}
+
+.greatings__head__buttons__rightArrow::before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.arrow--hidden {
+	opacity: 30%;
+}
+
+/* ---------- CARDS ---------- */
+
+.greatings__body {
+	margin: 0 1.5rem;
+	display: flex;
+	z-index: 2;
+}
+
+.greatings__body__card {
+	height: 150px;
+	margin: 0.45rem;
+	padding: 1.7rem;
+	border-radius: 10px;
+	background-color: #fff;
+	position: relative;
+	z-index: -2;
+	z-index: 2;
+}
+
+.greatings__body__card__photo {
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+	position: absolute;
+	top: -35px;
+	left: 25px;
+}
+
+.greatings__body__card__photo::before {
+	content: "";
+	display: inline-block;
+	height: 120%;
+	width: 120%;
+	border-radius: 50%;
+	background-color: #eee;
+	position: absolute;
+	top: -10%;
+	left: -10%;
+	z-index: -1;
+}
+
+.photo--blue {
+	background-color: lightblue;
+}
+
+.photo--orange {
+	background-color: lightsalmon;
+}
+
+.photo--green {
+	background-color: lightgreen;
+}
+
+.photo--yellow {
+	background-color: lightyellow;
+}
+
+.photo--pink {
+	background-color: lightpink;
+}
+
+.greatings__body__card__texts {
+	height: 100%;
+	margin-top: 2.75rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.greatings__body__card__texts__head {
+	margin-bottom: 1.15rem;
+	display: flex;
+	align-items: baseline;
+}
+
+.greatings__body__card__texts__head p:nth-child(1) {
+	margin-right: 0.7em;
+	font-size: 1.15rem;
+	font-weight: bold;
+}
+
+.greatings__body__card__texts__head p:nth-child(2) {
+	margin-right: 0.8rem;
+	font-size: 0.8rem;
+}
+
+.greatings__body__card__texts__body {
+	text-align: justify;
+}
+
+.greatings__body__card::after {
+	content: '"';
+	font-size: 9rem;
+	color: #c5db21;
+	position: absolute;
+	top: -10px;
+	right: 30px;
+	transform: rotate(20deg);
+}
+
+.card--hidden {
+	display: none;
+}
+
+/* ---------- FOOTER ---------- */
+
+.greatings__footer {
+	margin: 5rem 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.greatings__footer__client {
+	width: 150px;
+	height: 50px;
+	background-color: #c5db21;
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 1080px) {
+	.banner {
+		height: 350px;
+	}
+
+	.banner__texts {
+		width: 33%;
+	}
+
+	.banner__texts p:last-child {
+		margin-top: 0;
+	}
+}

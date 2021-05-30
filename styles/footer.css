@@ -1,0 +1,66 @@
+.footer {
+	width: 100%;
+	padding: 6rem 0;
+	border-top: solid 3px lightgray;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer p {
+	cursor: pointer;
+}
+
+.footer__logo {
+	display: flex;
+}
+
+.footer__logo__image {
+	height: 50px;
+	width: 50px;
+	background-color: #333;
+	margin-right: 0.5rem;
+}
+
+.footer__logo__texts p:nth-child(1) {
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.footer__logo__texts p:nth-child(2) {
+	font-size: 0.6rem;
+	color: #666;
+}
+
+.footer__meta p {
+	font-size: 0.9rem;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+
+.footer__pages-1 p,
+.footer__pages-2 p,
+.footer__language {
+	font-size: 0.9rem;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+
+.footer__pages-1 p:nth-child(1) {
+	color: #c5db21;
+}
+
+.footer__language {
+	cursor: pointer;
+}
+
+.footer__social {
+	display: flex;
+}
+
+.footer__social__elem {
+	height: 25px;
+	width: 25px;
+	margin: 0 0.3rem;
+	background-color: #c5db21;
+	cursor: pointer;
+}
